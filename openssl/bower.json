@@ -1,0 +1,39 @@
+{
+  "name": "openssl",
+  "version": "1.0.1",
+  "homepage": "https://github.com/jgacuca567/start-sass",
+  "authors": [
+    "James Van Waza <jgacuca@gmail.com>"
+  ],
+  "description": "Testing of the Open SSL Setup",
+  "main": "index.php, scss/main.scss",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "jQuery",
+    "PHP",
+    "MySQL",
+    "Javascript",
+    "Node",
+    "Grunt",
+    "Sass",
+    "LiveReload",
+    "Font-Awesome"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "foundation-sites": "~6.1.1"
+  }
+}
