@@ -1,5 +1,5 @@
 <?php include 'nav-admin.php';?>
-	<h2>Cipher Methods</h2>
+	<h3>Cipher Methods</h3>
 <?php
 /** Gets the Cipher Methods */
 $ciphers = openssl_get_cipher_methods();
