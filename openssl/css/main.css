@@ -1,21 +1,17 @@
-/* ----------- iPhone 4 and 4S ----------- */
-/* Portrait and Landscape */
-/* ----------- iPhone 5 and 5S ----------- */
-/* Portrait and Landscape */
-/* Portrait and Landscape */
-/* ----------- iPhone 6+ ----------- */
-/* Portrait and Landscape */
-/* ----------- iPad mini ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-/* Landscape */
-/* ----------- iPad 1 and 2 ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-/* Landscape */
-/* ----------- iPad 3 and 4 ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-/* Landscape */
-/* ----------- Non-Retina Screens ----------- */
-/* ----------- Retina Screens ----------- */
+@import url("//fonts.googleapis.com/css?family=Asar|Archivo%20Narrow");
+body {
+  font-family: 'Asar', serif;
+}
+
+a, button, li, p, h2 {
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+#footer {
+  background-color: #468966;
+  color: #FFF0A5;
+}
+
+.echospan {
+  color: #468966;
+}
