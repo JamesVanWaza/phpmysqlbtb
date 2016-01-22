@@ -1,4 +1,8 @@
-<?php include_once 'html5req.php';?>
+<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle></button>
+  <div class="title-bar-title">Menu</div>
+</div>
+
 <nav class="top-bar" id="example-menu">
   <div class="top-bar-left">
     <ul class="vertical medium-horizontal menu dropdown menu" data-dropdown-menu>
