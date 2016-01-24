@@ -8,4 +8,4 @@
 
 
 ## TO DO
-1. Move Font Awesome to Bower Components
+1. <del>Move Font Awesome to Bower Components</del>
