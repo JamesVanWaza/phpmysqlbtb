@@ -2,7 +2,7 @@
 <nav class="top-bar" id="example-menu">
   <div class="top-bar-left">
     <ul class="vertical medium-horizontal menu dropdown menu" data-dropdown-menu>
-      <li class="menu-text">OpenSSL</li>
+      <li class="menu-text"><a href="index.php">OpenSSL</a></li>
       <li><a href="ciphermethods.php">Ciphers</a></li>
       <li><a href="php.php">PHP</a></li>
       <li><a href="mysql.php">MySQL</a></li>
