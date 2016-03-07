@@ -18,7 +18,7 @@ print_r($numbers);
 echo "</pre> . <hr>";
 
 //prepends an element to an array and returns the element count
-echo '<h2>Array Pop</h2>';
+echo '<h2>Array Unshift</h2>';
 $b = array_unshift($numbers, 'first');
 
 /** Counts the number in the array */
