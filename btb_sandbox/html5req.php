@@ -9,6 +9,5 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="row">
-        <div class="large-6 medium-6 small-12 columns">
+
 
