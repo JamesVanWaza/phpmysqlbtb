@@ -9,7 +9,7 @@ class Person {
 
 //Gets the list of php default classes
 $classes = get_declared_classes();
-echo "<h1 class='text-center'>" . "Declared PHP Classes" . "</h1>";
+echo "<h3 class='text-center'>" . "Declared PHP Classes" . "</h3>";
 echo "<ol>";
 foreach ($classes as $class) {
 	echo '<li>' . $class . "</li>";
