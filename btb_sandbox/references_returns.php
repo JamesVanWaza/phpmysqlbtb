@@ -3,7 +3,6 @@
         <div class="small-12 medium-6 large-6 columns">
             <h1 class="text-center">Reference as Function Return Values</h1>
 <?php
-include_once 'html5req.php';
 function ref_return() {
 	global $a;
 	$a = $a * 2;
