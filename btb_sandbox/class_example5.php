@@ -1,7 +1,7 @@
 <?php include_once 'html5req.php';?>
     <div class="row">
         <div class="small-12 medium-6 large-6 columns">
-            <h1 class="text-center">Class Examples: 4</h1>
+            <h1 class="text-center">Class Examples: 5</h1>
 <?php
 class Person {
 	var $first_name;
