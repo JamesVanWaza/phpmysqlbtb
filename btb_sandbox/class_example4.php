@@ -5,7 +5,7 @@
 		<?php
 class Person {
 	function say_hello() {
-		echo "Hello from inside the class. " . get_class($this) . "<br>";
+		echo "Hello from inside the class " . get_class($this) . "<br>";
 	}
 
 	function hello() {
