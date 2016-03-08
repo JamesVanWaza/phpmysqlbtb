@@ -3,6 +3,11 @@
         <div class="small-12 medium-6 large-6 columns">
             <h1 class="text-center">Access Modifiers: 1</h1>
 <?php
+/**
+ * public class: Shows Everywhere
+ * private class: Shows only in the class
+ * protected class: Shows in the class and subclass
+ */
 class Example {
 	public $a = 1;
 	protected $b = 2;
