@@ -14,10 +14,6 @@ class Person {
 		echo "Hello from inside the class. " . get_class($this) . "<br>";
 	}
 
-	function hello() {
-		$this->say_hello();
-	}
-
 	function full_name() {
 		return $this->first_name . " " . $this->last_name;
 	}
