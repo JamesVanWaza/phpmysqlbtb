@@ -3,9 +3,15 @@
         <div class="small-12 medium-6 large-6 columns">
             <h1 class="text-center">Static Modifier</h1>
 <?php
+/** with static methods you can't use this */
 class Student
 {
     static $total_students = 0;
+
+    public static function add_student()
+    {
+        Student::$total_students++;
+    }
 
     public static function welcome_students($var = "Hello")
     {
