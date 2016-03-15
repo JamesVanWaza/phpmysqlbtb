@@ -1,11 +1,11 @@
-<?php 
-	require_once ('../../includes/initialize.php');
-	require_once ('../../includes/functions.php');
-	require_once ('../../includes/session.php');
-	if (!$session->is_logged_in()) {
-		redirect_to('login.php');
-	}
-	include_once ('../layouts/admin-header.php');
+<?php
+require_once '../../includes/initialize.php';
+require_once '../../includes/functions.php';
+require_once '../../includes/session.php';
+if (!$session->is_logged_in()) {
+	redirect_to('login.php');
+}
+include_once '../layouts/admin-header.php';
 ?>
 <html lang="en">
 <head>
@@ -19,6 +19,6 @@
 			<p>Welcome Logged in user</p>
 		</div>
 	</div>
-	<?php include_once ('../layouts/admin-footer.php'); ?>
+	<?php include_once '../layouts/admin-footer.php';?>
 </body>
 </html>
