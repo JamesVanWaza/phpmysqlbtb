@@ -4,7 +4,10 @@
 require_once '../includes/database.php';
 require_once '../includes/user.php';
 include_once 'html5req.php';
-
+?>
+	<div class="row">
+		<div class="small-12 medium-12 large-12 columns">
+<?php
 $user = User::find_by_id(1);
 echo $user->full_name();
 
@@ -16,3 +19,5 @@ foreach ($users as $user) {
 	echo "Name: " . $user->full_name() . "<br /><br />";
 }
 ?>
+		</div>
+	</div>
