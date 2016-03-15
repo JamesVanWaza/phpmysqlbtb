@@ -1,19 +1,19 @@
-<?php 
-	require_once ('../../includes/initialize.php');
-	if (!$session->is_logged_in()) {
-		redirect_to('login.php');
-	}
-	include_once ('../layouts/admin-header.php');
+<?php
+require_once '../../includes/initialize.php';
+if (!$session->is_logged_in()) {
+	redirect_to('login.php');
+}
+include_once '../layouts/admin-header.php';
 ?>
-<?php 
-	// $user = new User();
-	// $user->username = "johnsmith";
-	// $user->password = "abcd12345";
-	// $user->first_name = "John";
-	// $user->last_name = "Smith";
+<?php
+// $user = new User();
+// $user->username = "johnsmith";
+// $user->password = "abcd12345";
+// $user->first_name = "John";
+// $user->last_name = "Smith";
 
-	//$user = User::find_by_id(2);
-	//$user->delete();
+//$user = User::find_by_id(2);
+//$user->delete();
 ?>
 <html lang="en">
 <head>
@@ -32,6 +32,6 @@
 			</section>
 		</div>
 	</div>
-	<?php include_once ('../layouts/admin-footer.php'); ?>
+	<?php include_once '../layouts/admin-footer.php';?>
 </body>
 </html>
