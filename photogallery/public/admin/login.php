@@ -28,12 +28,12 @@ if (isset($_POST['submit'])) {
 include_once 'html5req.php';
 ?>
 	<div class="row">
-		<div class="large-6 medium-6 small-12 columns">
+		<div class="large-12 medium-12 small-12 columns">
 			<header id="header">
 				<h1 class="text-center">Photo Gallery</h1>
 			</header>
 			<section id="main">
-				<h2>Staff Login</h2>
+				<h2 class="text-center">Staff Login</h2>
 			</section>
 		</div>
 	</div>
