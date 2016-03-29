@@ -1,3 +1,3 @@
 <footer id="footer">
-	Copyright <?php echo date("Y", time()); ?>, James Van Waza
+	<i class="fa fa-copyright"></i> Copyright <?php echo date("Y", time()); ?>, James Van Waza
 </footer>
