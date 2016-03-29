@@ -27,11 +27,11 @@ if (isset($_POST['submit'])) {
 
 include_once 'html5req.php';
 ?>
+	<header id="header">
+		<h1 class="text-center">Photo Gallery</h1>
+	</header>
 	<div class="row">
 		<div class="large-12 medium-12 small-12 columns">
-			<header id="header">
-				<h1 class="text-center">Photo Gallery</h1>
-			</header>
 			<section id="main">
 				<h2 class="text-center">Staff Login</h2>
 			</section>
