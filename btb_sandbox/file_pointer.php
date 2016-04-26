@@ -1,20 +1,19 @@
-<?php 
-	
-	$file = 'filetest.txt';
+<?php
 
-	if ($handle = fopen($file, 'w')) {
-		fwrite($handle, "123\n456\n789");
-		
-		$pos = ftell($handle);
-		fseek($handle, $pos - 6);
+$file = 'filetest.txt';
 
-		fwrite($handle, 'abcdef');
+if ($handle = fopen($file, 'w')) {
+    fwrite($handle, "123\n456\n789");
 
-		rewind($handle);
-		fwrite($handle, "xyz");
+    $pos = ftell($handle);
+    fseek($handle, $pos - 6);
 
-		fclose($handle);
-	}
+    fwrite($handle, 'abcdef');
 
-	/** BEWARE - It will Overtype */
-?>
+    rewind($handle);
+    fwrite($handle, "xyz");
+
+    fclose($handle);
+}
+
+/** BEWARE - It will Overtype */
