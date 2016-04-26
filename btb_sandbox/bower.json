@@ -1,0 +1,24 @@
+{
+  "name": "btb_sandbox",
+  "homepage": "https://github.com/jgacuca567/PHPMYSQLBTB",
+  "authors": [
+    "JamesVanWaza <jgacuca@gmail.com>"
+  ],
+  "description": "PHP Project Testing",
+  "main": "index.php",
+  "keywords": [
+    "PHP5",
+    "PHP7"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3"
+  }
+}
