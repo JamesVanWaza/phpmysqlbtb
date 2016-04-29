@@ -23,7 +23,7 @@ echo "</pre>";
 
 echo "<hr>";
 
-echo "<b>Path of file: </b>" . $path_parts['dirname'] . "<br>"; // "/Applications/MAMP/htdocs/phpmysqlbtb/btb_sandbox"
+echo "<b>Path of file: </b>" . $path_parts['dirname'] . "<br>"; // "/Users/jgacuca/Dropbox/htdocs/2016/April/PHPMYSQLBTB/btb_sandbox"
 echo "<b>Full name of file: </b>" . $path_parts['basename'] . "<br>"; // "file_details.php"
 echo "<b>File Extension: </b>" . $path_parts['extension'] . "<br>"; // "php"
 echo "<b>Name of file without extension: </b>" . $path_parts['filename'] . "<br>"; // "file_details"
