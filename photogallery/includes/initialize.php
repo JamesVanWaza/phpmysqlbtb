@@ -10,7 +10,7 @@
  */
 
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
-defined('SITE_ROOT') ? null : define('SITE_ROOT', DS . 'Users' . DS . 'jamesvanwaza' . DS . 'Dropbox' . DS . 'htdocs' . DS . '2016' . DS . 'March' . DS . '07' . DS . 'phpmysqlbtb' . DS . 'photogallery');
+defined('SITE_ROOT') ? null : define('SITE_ROOT', DS . 'Users' . DS . 'jamesvanwaza' . DS . 'Dropbox' . DS . 'htdocs' . DS . '2016' . DS . 'May' . DS . 'phpmysqlbtb' . DS . 'photogallery');
 
 /** Load config file first */
 require_once 'config.php';
