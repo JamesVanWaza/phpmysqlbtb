@@ -2,6 +2,7 @@
 <html lang="en">
 <meta charset="utf-8">
 <head>
+    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
     <link href="../css/foundation.css" rel="stylesheet" type="text/css">
     <link href="../css/main.css" rel="stylesheet" type="text/css">
 </head>
