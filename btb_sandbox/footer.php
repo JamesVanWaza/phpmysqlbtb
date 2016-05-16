@@ -1,4 +1,4 @@
-	<footer>
+	<footer style="visibility:hidden;">
 		<i class="fa fa-copyright"></i> JAMESVANWAZA 2012 - <?php echo date('Y'); ?>
 	</footer>
 	<?php
@@ -11,5 +11,6 @@ echo $time;
  */
 ?>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="js/stickyfooter.js"></script>
 </body>
 </html>
