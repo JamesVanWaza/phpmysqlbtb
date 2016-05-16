@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
 	$username = "";
 	$password = "";
 }
-include_once '../html5req.php';
+include_once '../html5req.php'; 
 ?>
 
 	<header id="header">

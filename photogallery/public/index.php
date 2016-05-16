@@ -7,7 +7,7 @@
 
 require_once '../includes/database.php';
 require_once '../includes/user.php';
-include_once 'layouts/admin-header.php';
+include_once 'admin-header.php';
 ?>
 <div class="row">
   <div class="small-12 medium-12 large-12 columns">
@@ -25,4 +25,4 @@ foreach ($users as $user) {
 ?>
   </div>
 </div>
-<?php include_once 'layouts/footer.php';?>
+<?php include_once 'footer.php';?>

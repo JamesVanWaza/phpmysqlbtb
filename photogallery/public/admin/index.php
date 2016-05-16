@@ -7,23 +7,14 @@ if (!$session->is_logged_in()) {
 }
 include_once '../layouts/admin-header.php';
 ?>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Photo Gallery</title>
-	<link rel="stylesheet" href="../css/main.css">
-</head>
-<body>
-	<div class="row">
-		<div class="large-6 columns medium-6 columns small-12 columns">
-			<p>Welcome Logged in user</p>
-		</div>
+<div class="row">
+	<div class="large-6 columns medium-6 columns small-12 columns">
+		<p>Welcome Logged in user</p>
 	</div>
-	<nav>
-		<ul>
-			<li><a href="logfile.php">Log File</a></li>
-		</ul>
-	</nav>
+</div>
+<nav>
+	<ul class="side-nav">
+		<li><a href="logfile.php">Log File</a></li>
+	</ul>
+</nav>
 	<?php include_once '../layouts/footer.php';?>
-</body>
-</html>
