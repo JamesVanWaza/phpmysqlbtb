@@ -19,6 +19,11 @@ include_once '../layouts/admin-header.php';
 			<p>Welcome Logged in user</p>
 		</div>
 	</div>
+	<nav>
+		<ul>
+			<li><a href="logfile.php">Log File</a></li>
+		</ul>
+	</nav>
 	<?php include_once '../layouts/admin-footer.php';?>
 </body>
 </html>
