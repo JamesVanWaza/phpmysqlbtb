@@ -34,5 +34,5 @@ if (file_exists($logfile) && is_readable($logfile) && $handle = fopen($logfile, 
 } else {
 	# code...
 }
-include_once '../layouts/admin-footer.php';
+include_once '../layouts/footer.php';
 ?>
