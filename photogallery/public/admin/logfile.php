@@ -7,7 +7,13 @@ include_once '../layouts/admin-header.php';
 
 $logfile = SITE_ROOT . DS . 'logs' . DS . 'log.txt';
 if ($_GET['clear'] == 'true') {
-	# code...
+	file_put_contents($logfile, '');
+
+	/** Add the first log entry */
+	log_action('Logs cleared', "by User ID {$session->user_id}");
+
+	/** redirect tp this same page so that the URL won't have "clear=true" anymore */
+	redirect_to('logfile.php');
 }
 ?>
 <a href="index.php">&laquo; Back</a>
@@ -28,5 +34,5 @@ if (file_exists($logfile) && is_readable($logfile) && $handle = fopen($logfile, 
 } else {
 	# code...
 }
-include_once '../layouts/admin-footer.php'
+include_once '../layouts/admin-footer.php';
 ?>
