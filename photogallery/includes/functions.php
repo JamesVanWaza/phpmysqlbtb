@@ -34,3 +34,20 @@ function __autoload($class_name) {
 		die("The file {$class_name}.php could not be found");
 	}
 }
+
+function log_action($action, $message = "") {
+	$logfile = SITE_ROOT . DS . 'logs' . DS . 'log.txt';
+	$new = file_exists($logfile) ? false : true;
+	if ($handle = fopen($logfile, 'a')) {
+		/** append */
+		$timestamp = strftime("%Y-%m-%d %H:%M:%S", time());
+		$content = "{$timestamp} | {$action} : {$message}\n ";
+		fwrite($handle, $content);
+		fclose($handle);
+		if ($new) {
+			# code...
+		} else {
+			# code...
+		}
+	}
+}
