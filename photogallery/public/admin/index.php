@@ -24,6 +24,6 @@ include_once '../layouts/admin-header.php';
 			<li><a href="logfile.php">Log File</a></li>
 		</ul>
 	</nav>
-	<?php include_once '../layouts/admin-footer.php';?>
+	<?php include_once '../layouts/footer.php';?>
 </body>
 </html>
