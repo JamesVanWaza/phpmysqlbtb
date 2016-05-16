@@ -1,35 +1,33 @@
 <?php
-	require_once ('../../includes/initialize.php');
-	if (!$session->is_logged_in()) {
-		redirect_to('login.php');
-	}
-	include_once ('../layouts/admin-header.php');
-?>
-<?php 
-	$max_file_size = 1048576; 
-	/** 
-	 * Expressed in bytes
-	 * 1 KB = 1000 Bytes
-	 * 100 KB = 100000 Bytes
-	 * 1 MB = 1 * 10^6 Bytes
-	 * 10 MB = 1 * 10^7 Bytes
-	 */
-	echo "<pre>";
-	var_dump($_FILES);
-	echo "</pre>";
+require_once '../../includes/initialize.php';
+if (!$session->is_logged_in()) {
+	redirect_to('login.php');
+}
+include_once '../layouts/admin-header.php';
+$max_file_size = 1048576;
+/**
+ * Expressed in bytes
+ * 1 KB = 1000 Bytes
+ * 100 KB = 100000 Bytes
+ * 1 MB = 1 * 10^6 Bytes
+ * 10 MB = 1 * 10^7 Bytes
+ */
+echo "<pre>";
+var_dump($_FILES);
+echo "</pre>";
 
-	if (isset($_POST['submit'])) {
-		$photo = new Photograph();
-		$photo->caption = $_POST['caption'];
-		$photo->attach_file($_FILES['file_upload']);
-		if ($photo->save()) {
-			/** Success */
-			$message = "Photograph uploaded successfully";
-		} else {
-			/** Failure */
-			$message = join("<br>", $photo->errors);
-		}
+if (isset($_POST['submit'])) {
+	$photo = new Photograph();
+	$photo->caption = $_POST['caption'];
+	$photo->attach_file($_FILES['file_upload']);
+	if ($photo->save()) {
+		/** Success */
+		$message = "Photograph uploaded successfully";
+	} else {
+		/** Failure */
+		$message = join("<br>", $photo->errors);
 	}
+}
 ?>
 <html lang="en">
 	<head>
@@ -53,6 +51,6 @@
 				</div>
 			</div>
 		</form>
-		<?php include_once ('../layouts/admin-footer.php'); ?>
+		<?php include_once '../layouts/admin-footer.php';?>
 	</body>
 </html>
