@@ -1,5 +1,6 @@
 /*jslint node: true */
-module.exports = function(grunt) {
+module.exports = function (grunt) {
+    'use strict';
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -10,27 +11,18 @@ module.exports = function(grunt) {
                     sourceMap: false
                 },
                 files: {
-                    'css/main.css': 'scss/main.scss',
-                    'css/foundation.css': 'scss/foundation.scss'
+                    'css/main.css': 'scss/main.scss'
                 }
             }
         }, // sass
 
-        compass: {
-            dev: {
-                options: {
-                    config: 'config.rb'
-                }
-            } // dev
-        }, //compass
-
         watch: {
             options: {
                 livereload: true,
-                dateFormat: function(time) {
-                        grunt.log.writeln('The watch finished in ' + time + 'ms at ' + (new Date()).toString());
-                        grunt.log.writeln('Waiting for more changes...');
-                    } //date format function
+                dateFormat: function (time) {
+                    grunt.log.writeln('The watch finished in ' + time + 'ms at ' + (new Date()).toString());
+                    grunt.log.writeln('Waiting for more changes...');
+                } //date format function
             }, //options
             scripts: {
                 files: ['*.js', 'js/*.js']
@@ -42,7 +34,7 @@ module.exports = function(grunt) {
             }, //sass
             css: {
                 files: ['scss/*.scss'],
-                tasks: ['compass']
+                tasks: []
             },
             html: {
                 files: ['*.html']
@@ -67,17 +59,12 @@ module.exports = function(grunt) {
             options: {
                 reporter: require('jshint-stylish')
             },
-            target: ['*.js', 'js/*.js'], 
+            target: ['*.js', 'js/*.js'],
             all: ['*.js', 'js/*.js']
         } //jshint
     });
 
-    grunt.loadNpmTasks('grunt-sass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-compass');
-    grunt.loadNpmTasks('grunt-postcss');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-force-task');
+    require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('default', ['sass', 'watch', 'compass', 'force:jshint']);
+    grunt.registerTask('default', ['autoupdate', 'sass', 'openport:watch.options.livereload:35729', 'watch', 'force:jshint']);
 };
