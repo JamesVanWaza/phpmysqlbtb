@@ -54,7 +54,7 @@ include_once 'html5req.php';
 
 
 		<div class="large-12 medium-12 small-12 columns">
-			<button class="tiny radius" name="submit">Submit</button>
+			<button class="small button" name="submit">Submit</button>
 		</div>
 	  </div>
 	</form>
