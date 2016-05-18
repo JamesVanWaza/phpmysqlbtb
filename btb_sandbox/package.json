@@ -1,7 +1,8 @@
 {
-  "name": "openssl",
-  "version": "1.0.1",
-  "description": "Learning Open SSL Setup",
+  "name": "btb_sandbox",
+  "version": "1.0.3",
+  "private": true,
+  "description": "PHP Learning",
   "main": "index.php",
   "dependencies": {
     "grunt": "^0.4.5",
@@ -17,13 +18,16 @@
     "normalize-scss": "^3.0.3",
     "node-sass": "^3.4.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt-autoupdate": "0.0.1",
+    "grunt-openport": "^1.0.0",
+    "grunt-php": "^1.5.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "PHP7",
-    "OpenSSL",
     "Foundation6"
   ],
   "author": "JamesVanWaza",
