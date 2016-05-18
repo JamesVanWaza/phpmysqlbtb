@@ -11,7 +11,8 @@ module.exports = function (grunt) {
                     sourceMap: false
                 },
                 files: {
-                    'css/main.css': 'scss/main.scss'
+                    'css/main.css': 'scss/main.scss', 
+                    'css/foundation.css': 'scss/foundation.scss'
                 }
             }
         }, // sass
