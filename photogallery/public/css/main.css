@@ -18,3 +18,13 @@ a, button, li, p, h2 {
 #header h1 {
   color: #FFFFFF;
 }
+
+.submit {
+  background-color: #468966;
+  color: #FFF0A5;
+}
+
+.submit:hover {
+  background-color: #FFB03B;
+  color: white;
+}
