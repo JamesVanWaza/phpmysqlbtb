@@ -10,3 +10,11 @@ a, button, li, p, h2 {
 .echospan {
   color: #468966;
 }
+
+#header {
+  background-color: #FFB03B;
+}
+
+#header h1 {
+  color: #FFFFFF;
+}
