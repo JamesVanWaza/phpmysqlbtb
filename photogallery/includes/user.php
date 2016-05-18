@@ -65,8 +65,8 @@ class User extends DatabaseObject {
 		} else {
 			return false;
 		}
-
 	}
+
 	public function update() {
 		global $database;
 		$attributes = $this->sanitized_attributes();
@@ -80,6 +80,7 @@ class User extends DatabaseObject {
 		$database->query($sql);
 		return ($database->affected_rows() == 1) ? true : false;
 	}
+
 	public function delete() {
 		global $database;
 
