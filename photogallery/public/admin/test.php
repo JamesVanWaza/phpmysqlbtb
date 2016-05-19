@@ -32,6 +32,6 @@ include_once '../layouts/admin-header.php';
 			</section>
 		</div>
 	</div>
-	<?php include_once '../layouts/admin-footer.php';?>
+	<?php include_once '../layouts/footer.php';?>
 </body>
 </html>
