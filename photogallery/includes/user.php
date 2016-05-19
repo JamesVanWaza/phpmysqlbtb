@@ -33,6 +33,21 @@ class User extends DatabaseObject {
 		return !empty($result_array) ? array_shift($result_array) : false;
 	}
 
+	private function has_attribute($attrtibute) {
+		/** get_object_vars returns an associative array with all attributes including private ones! as the keys and their current values as the value */
+		$object_vars = get_object_vars($this);
+
+		/**
+		 * We don't care about the value, we just want to know if the key exists
+		 * Will return true or false
+		 */
+		return array_key_exists($attribute, $object_vars);
+	}
+
+	protected function attributes() {
+		/** return an array of attribute keys and their values */
+	}
+
 	/**
 	 * If a new record doesn't have an id, the record will be created else if the ID is already there, the record will be updated.
 	 */
