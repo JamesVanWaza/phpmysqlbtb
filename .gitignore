@@ -2,3 +2,9 @@
 photogallery/public/.pkg
 
 btb_sandbox/.pkg
+
+*.txt
+
+*.txt
+
+photogallery/logs/log.txt
