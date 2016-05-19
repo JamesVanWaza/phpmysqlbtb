@@ -51,6 +51,6 @@ if (isset($_POST['submit'])) {
 				</div>
 			</div>
 		</form>
-		<?php include_once '../layouts/admin-footer.php';?>
-	</body>
+		<?php include_once '../layouts/footer.php';?>
+</body>
 </html>
