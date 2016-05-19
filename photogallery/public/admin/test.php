@@ -24,11 +24,11 @@ include_once '../layouts/admin-header.php';
 <body>
 	<div class="row">
 		<div class="large-6 columns medium-6 columns small-12 columns">
-			<header id="header">
-				<h1>Photo Gallery</h1>
+			<header>
+				<h2>Photo Gallery</h2>
 			</header>
 			<section id="main">
-				<h2>Menu</h2>
+				<h3>Menu</h3>
 			</section>
 		</div>
 	</div>
