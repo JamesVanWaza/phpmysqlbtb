@@ -46,6 +46,24 @@ class User extends DatabaseObject {
 
 	protected function attributes() {
 		/** return an array of attribute keys and their values */
+		$attributes = array();
+
+		foreach (self::$db_fields as $field) {
+			if (property_exists($this, $field)) {
+				$attributes[$field] = $this->$field;
+			}
+		}
+	}
+
+	protected function sanitized_attributes() {
+		global $database;
+		$clean_attributes = array();
+		//sanitize the values before submitting
+		//Note: does not the alter the actual value of each attribute
+		foreach ($this->attributes() as $key => $value) {
+			$clean_attributes[$key] = $database->escape_value($value);
+		}
+		return $clean_attributes;
 	}
 
 	/**
