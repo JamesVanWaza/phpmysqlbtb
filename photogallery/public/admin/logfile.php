@@ -6,7 +6,7 @@ if (!$session->is_logged_in()) {
 include_once '../layouts/admin-header.php';
 
 $logfile = SITE_ROOT . DS . 'logs' . DS . 'log.txt';
-if ($_GET['clear'] == 'true') {
+if (!empty($_GET['clear']) == 'true') {
 	file_put_contents($logfile, '');
 
 	/** Add the first log entry */
@@ -32,7 +32,7 @@ if (file_exists($logfile) && is_readable($logfile) && $handle = fopen($logfile, 
 	echo "</ul>";
 	fclose($handle);
 } else {
-	# code...
+	echo "Could not read from {$logfile}";
 }
 include_once '../layouts/footer.php';
 ?>
