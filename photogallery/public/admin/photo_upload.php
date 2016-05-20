@@ -16,7 +16,7 @@ $max_file_size = 1048576;
 //echo "<pre>";
 //var_dump($_FILES);
 //echo "</pre>";
-**/
+ **/
 
 if (isset($_POST['submit'])) {
 	$photo = new Photograph();
@@ -40,12 +40,12 @@ if (isset($_POST['submit'])) {
 	<body>
 		<form action="photo_upload.php" enctype="multipart/form-data" method="post">
 			<div class="row">
-				<div class="large-6 medium-6 small-12 columns">
+				<div class="small-12 medium-12 large-12 columns">
 					<input type="hidden" name="MAX_FILE_SIZE" value="<?php echo $max_file_size; ?>">
 					<input type="file" name="file_upload" id="file_upload" />
 				</div>
 				<br>
-				<div class="large-6 medium-6 small-12 columns">
+				<div class="small-12 medium-6 large-6 columns">
 					<label>Caption</label><input type="text" name="caption" value="">
 				</div>
 				<div class="large-12 medium-12 small-12 columns">
