@@ -12,9 +12,11 @@ $max_file_size = 1048576;
  * 1 MB = 1 * 10^6 Bytes
  * 10 MB = 1 * 10^7 Bytes
  */
-echo "<pre>";
-var_dump($_FILES);
-echo "</pre>";
+/** Use to debug
+//echo "<pre>";
+//var_dump($_FILES);
+//echo "</pre>";
+**/
 
 if (isset($_POST['submit'])) {
 	$photo = new Photograph();
