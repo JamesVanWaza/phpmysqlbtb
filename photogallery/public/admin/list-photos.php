@@ -6,6 +6,9 @@ if (!$session->is_logged_in()) {
 	redirect_to('login.php');
 }
 include_once '../layouts/admin-header.php';
+
+/** Find all the photos */
+$photos = Photograph::find_all();
 ?>
 <table>
     <thead>
