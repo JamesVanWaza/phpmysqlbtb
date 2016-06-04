@@ -1,31 +1,31 @@
 <?php
 require_once '../../includes/initialize.php';
 if ($session->is_logged_in()) {
-	redirect_to("index.php");
+    redirect_to("index.php");
 }
 
 /** Remember to give your form's submit tag a name="submit" attribute! */
 if (isset($_POST['submit'])) {
-	$username = trim($_POST['username']);
-	$password = trim($_POST['password']);
+    $username = trim($_POST['username']);
+    $password = trim($_POST['password']);
 
-	/** Check database to see if username/password exists */
-	$found_user = User::authenticate($username, $password);
+    /** Check database to see if username/password exists */
+    $found_user = User::authenticate($username, $password);
 
-	if ($found_user) {
-		$session->login($found_user);
-		log_action('Login', "{$found_user->username} logged in.");
-		redirect_to('index.php');
-	} else {
-		/** Username/password combo was not found in the database */
-		$message = "Username/password combination incorrect.";
-	}
+    if ($found_user) {
+        $session->login($found_user);
+        log_action('Login', "{$found_user->username} logged in.");
+        redirect_to('index.php');
+    } else {
+        /** Username/password combo was not found in the database */
+        $message = "Username/password combination incorrect.";
+    }
 } else {
-	/** Form has not been submitted */
-	$username = "";
-	$password = "";
+    /** Form has not been submitted */
+    $username = "";
+    $password = "";
 }
-include_once '../html5req.php'; 
+include_once 'public/html5req.php';
 ?>
 
 	<header id="header">
@@ -61,6 +61,6 @@ include_once '../html5req.php';
 
 <?php
 if (isset($database)) {
-	$database->close_connection();
+    $database->close_connection();
 }
 ?>
