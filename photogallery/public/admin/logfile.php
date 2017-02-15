@@ -1,9 +1,9 @@
 <?php
-require_once '../../includes/initialize.php';
+require_once '../includes/initialize.php';
 if (!$session->is_logged_in()) {
 	redirect_to('login.php');
 }
-include_once '../layouts/admin-header.php';
+include_once '../public/layouts/admin-header.php';
 
 $logfile = SITE_ROOT . DS . 'logs' . DS . 'log.txt';
 if (!empty($_GET['clear']) == 'true') {
@@ -34,5 +34,5 @@ if (file_exists($logfile) && is_readable($logfile) && $handle = fopen($logfile, 
 } else {
 	echo "Could not read from {$logfile}";
 }
-include_once '../layouts/footer.php';
+include_once '../public/layouts/footer.php';
 ?>

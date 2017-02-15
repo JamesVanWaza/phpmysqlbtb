@@ -1,9 +1,9 @@
 <?php
-require_once '../../includes/initialize.php';
+require_once '../includes/initialize.php';
 if (!$session->is_logged_in()) {
 	redirect_to('login.php');
 }
-include_once '../layouts/admin-header.php';
+include_once '../public/layouts/admin-header.php';
 ?>
 <?php
 // $user = new User();
@@ -19,7 +19,7 @@ include_once '../layouts/admin-header.php';
 <head>
 	<meta charset="UTF-8">
 	<title>Photo Gallery</title>
-	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../public/css/main.css">
 </head>
 <body>
 	<div class="row">
@@ -32,6 +32,6 @@ include_once '../layouts/admin-header.php';
 			</section>
 		</div>
 	</div>
-	<?php include_once '../layouts/footer.php';?>
+	<?php include_once '../public/layouts/footer.php';?>
 </body>
 </html>

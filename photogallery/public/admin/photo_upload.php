@@ -1,9 +1,9 @@
 <?php
-require_once '../../includes/initialize.php';
+require_once '../includes/initialize.php';
 if (!$session->is_logged_in()) {
 	redirect_to('login.php');
 }
-include_once '../layouts/admin-header.php';
+include_once '../public/layouts/admin-header.php';
 $max_file_size = 1048576;
 /**
  * Expressed in bytes
@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
 	<head>
 		<meta charset="UTF-8">
 		<title>Photo Gallery</title>
-		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../public/css/main.css">
 	</head>
 	<body>
 		<form action="photo_upload.php" enctype="multipart/form-data" method="post">
@@ -53,6 +53,6 @@ if (isset($_POST['submit'])) {
 				</div>
 			</div>
 		</form>
-		<?php include_once '../layouts/footer.php';?>
+		<?php include_once '../public/layouts/footer.php';?>
 </body>
 </html>

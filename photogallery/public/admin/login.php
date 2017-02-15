@@ -1,5 +1,5 @@
 <?php
-require_once '../../includes/initialize.php';
+require_once '../includes/initialize.php';
 if ($session->is_logged_in()) {
     redirect_to("index.php");
 }
@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
     $username = "";
     $password = "";
 }
-include_once 'public/html5req.php';
+include_once '../public/admin/public/html5req.php';
 ?>
 
 	<header id="header">

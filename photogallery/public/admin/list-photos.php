@@ -1,11 +1,11 @@
 <?php
-require_once '../../includes/initialize.php';
-require_once '../../includes/functions.php';
-require_once '../../includes/session.php';
+require_once '../includes/initialize.php';
+require_once '../includes/functions.php';
+require_once '../includes/session.php';
 if (!$session->is_logged_in()) {
 	redirect_to('login.php');
 }
-include_once '../layouts/admin-header.php';
+include_once '../public/layouts/admin-header.php';
 
 /** Find all the photos */
 $photos = Photograph::find_all();
@@ -32,4 +32,4 @@ $photos = Photograph::find_all();
 </table>
 <br>
 <i class="fa fa-picture-o" aria-hidden="true"></i> <a href="photo_upload.php">Upload a new photograph</a>
-<?php include_once '../layouts/footer.php';?>
+<?php include_once '../public/layouts/footer.php';?>
