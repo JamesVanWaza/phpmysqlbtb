@@ -6,5 +6,6 @@
     <!--<link href="css/main.css" rel="stylesheet" type="text/css">-->
     <!--<link href="css/foundation.css" rel="stylesheet" type="text/css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
-    <link rel="stylesheet" type="text/css" href="../node_modules/components-font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/prism.css" type="text/css" />
 </head>
