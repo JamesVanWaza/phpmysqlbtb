@@ -1,10 +1,4 @@
-
-photogallery/public/.pkg
-
-btb_sandbox/.pkg
-
 *.txt
-
-*.txt
-
-photogallery/logs/log.txt
+*.pkg
+node_modules/
+package-lock.json
