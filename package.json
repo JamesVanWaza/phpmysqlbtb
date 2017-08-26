@@ -1,0 +1,28 @@
+{
+  "name": "phpmysqlbtb",
+  "version": "1.0.0",
+  "description": "PHP Learning ",
+  "main": "index.php",
+  "dependencies": {
+    "foundation-sites": "^6.4.1",
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgacuca567/PHPMYSQLBTB.git"
+  },
+  "keywords": [
+    "PHP7",
+    "Foundation6"
+  ],
+  "author": "JamesVanWaza <info@dosbranding.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jgacuca567/PHPMYSQLBTB/issues"
+  },
+  "homepage": "https://github.com/jgacuca567/PHPMYSQLBTB#readme"
+}
