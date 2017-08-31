@@ -3,19 +3,16 @@
         <div class="small-12 medium-6 large-6 columns">
             <h1 class="text-center">Cloning</h1>
 <?php
-class Beverage
-{
-    public $name;
+class Beverage {
+	public $name;
 
-    public function __construct()
-    {
-        echo 'New beverage was created. <br>';
-    }
+	public function __construct() {
+		echo 'New beverage was created. <br>';
+	}
 
-    public function __clone()
-    {
-        echo 'Existing beverage was cloned. <br>';
-    }
+	public function __clone() {
+		echo 'Existing beverage was cloned. <br>';
+	}
 }
 
 $a = new Beverage();
