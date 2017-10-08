@@ -6,11 +6,12 @@
  *
  * DIRECTORY_SEPARATOR is a PHP pre-defined constant
  * (\for Windows, /for Unix)
- * Using Mac so it should be like this - /Users/jamesvanwaza/Dropbox/htdocs/2016/March/07
+ * Using Mac so it should be like this - /Users/jamesvanwaza/Dropbox/Apps/MAMP PRO/2017/September/phpmysqlbtb/photogallery'
  */
 
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
-defined('SITE_ROOT') ? null : define('SITE_ROOT', DS . 'Users' . DS . 'jamesvanwaza' . DS . 'Dropbox' . DS . 'htdocs' . DS . '2016' . DS . 'June' . DS . 'phpmysqlbtb' . DS . 'photogallery');
+defined('SITE_ROOT') ? null :
+define('SITE_ROOT', DS . 'Users' . DS . 'jamesvanwaza' . DS . 'Dropbox' . DS . 'APPS' . DS . 'MAMP PRO' . DS . '2017' . DS . 'September' . 'phpmysqlbtb' . DS . 'photogallery');
 
 /** Load config file first */
 require_once 'config.php';
