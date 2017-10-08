@@ -3,7 +3,7 @@ require_once '../includes/initialize.php';
 require_once '../includes/functions.php';
 require_once '../includes/session.php';
 if (!$session->is_logged_in()) {
-    redirect_to('login.php');
+	redirect_to('login.php');
 }
 include_once '../public/layouts/admin-header.php';
 include_once '../public/admin/layouts/admin-header.php';
