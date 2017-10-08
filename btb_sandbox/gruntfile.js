@@ -8,11 +8,11 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     outputStyle: 'expanded',
-                    sourceMap: false
+                    sourceMap: false,
+                    includePaths: ['node_modules/foundation-sites/scss']
                 },
                 files: {
-                    'css/main.css': 'scss/main.scss',
-                    'css/foundation.css': 'scss/foundation.scss'
+                    'css/style.css' : 'scss/style.scss'
                 }
             }
         }, // sass
@@ -67,5 +67,5 @@ module.exports = function(grunt) {
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('default', ['autoupdate', 'sass', 'openport:watch.options.livereload:35729', 'watch', 'force:jshint']);
+    grunt.registerTask('default', ['sass', 'openport:watch.options.livereload:35729', 'watch', 'force:jshint']);
 };
