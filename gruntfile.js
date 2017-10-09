@@ -7,7 +7,10 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     //loadPath
-                    loadPath: ['node_modules/susy/sass'],
+                    includePaths: [
+                    'node_modules/susy/sass', 
+                    'node_modules/foundation-sites/scss'
+                    ],
                     outputStyle: 'expanded',
                     sourceMap: false,
                     require: 'susy'
@@ -50,15 +53,15 @@ module.exports = function(grunt) {
             } //all
         }, //watch
 
-        postcss: {
-            options: {
-                processors: [
-                    require('autoprefixer')({
-                        browsers: 'last 2 versions'
-                    })
-                ]
-            }
-        }, //postcss
+        // postcss: {
+        //     options: {
+        //         processors: [
+        //             require('autoprefixer')({
+        //                 browsers: 'last 2 versions'
+        //             })
+        //         ]
+        //     }
+        // }, //postcss
 
         jshint: {
             options: {
@@ -71,5 +74,5 @@ module.exports = function(grunt) {
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('default', ['autoupdate', 'sass', 'postcss','openport:watch.options.livereload:35729', 'watch', 'force:jshint']);
+    grunt.registerTask('default', ['sass','openport:watch.options.livereload:35729', 'watch', 'jshint']);
 };
