@@ -2,7 +2,7 @@
 <h1 class="text-center">PHPMySQL BTB LEARNING</h1>
 <nav>
 	<ul>
-		
+
 	</ul>
 </nav>
 <div class="top-bar">
@@ -16,6 +16,7 @@
       	<li><a href="btb_sandbox/index.php">BTB Sandbox</a></li>
 		<li><a href="openssl/index.php">OpenSSL</a></li>
 		<li><a href="photogallery/public/index.php">PhotoGallery</a></li>
+		<li><a href="bookfifthedition/index.php">Fifth Edition Book</a></li>
     </ul>
   </div>
 </div>
