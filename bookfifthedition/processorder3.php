@@ -3,9 +3,9 @@
 <h4>Order Results</h4>
 <?php
 // Variable Names
-$tireqty = $_POST['tireqty'];
-$oilqty = $_POST['oilqty'];
-$sparkqty = $_POST['sparkqty'];
+$tireqty = $_POST['tireqty'] ?? '';
+$oilqty = $_POST['oilqty'] ?? '';
+$sparkqty = $_POST['sparkqty'] ?? '';
 
 echo '<p>Order processed at ';
 echo date('H:i,jS F Y');

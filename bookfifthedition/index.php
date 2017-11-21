@@ -6,7 +6,7 @@
 		<div class="grid-x grid-padding-x">
 			<div class="medium-4 cell"></div>
 			<div class="medium-4 cell"></div>
-			
+
 			<table style="border: 0px;">
 				<tr style="background: #CCCCCC;">
 					<td style="width: 150px; text-align: center;">Item</td>
@@ -26,8 +26,7 @@
 				</tr>
 			</table>
 			<div class="medium-12">
-				<!--<input type="submit" value="Submit Order">-->
-				<button type="submit" class="button float-right">Submit Order</button>
+				<button type="submit" class="button float-right" value="Submit Order">Submit Order</button>
 			</div>
 		</div>
 	</div>

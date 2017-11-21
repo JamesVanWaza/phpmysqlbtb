@@ -1,15 +1,14 @@
 {
   "name": "phpmysqlbtb",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "PHP Learning ",
   "main": "index.php",
   "dependencies": {
     "foundation-sites": "^6.4.3",
-    "grunt": "^1.0.1",
-    "susy": "^3.0.1"
+    "grunt": "^1.0.1"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.5",
+    "autoprefixer": "^7.1.6",
     "font-awesome": "^4.7.0",
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-sass": "^1.0.0",
@@ -19,7 +18,7 @@
     "grunt-sass": "^2.0.0",
     "jshint-stylish": "^2.2.1",
     "load-grunt-tasks": "^3.5.2",
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.6.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
