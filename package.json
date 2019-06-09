@@ -1,23 +1,19 @@
 {
   "name": "phpmysqlbtb",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "PHP Learning and Testing",
   "main": "index.php",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.6.3",
-    "foundation-sites": "^6.5.1",
-    "grunt": "^1.0.1"
+    "foundation-sites": "^6.5.3"
   },
   "devDependencies": {
-    "autoprefixer": "^9.4.4",
-    "grunt-contrib-jshint": "^2.0.0",
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "autoprefixer": "^9.6.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-postcss": "^0.9.0",
     "grunt-sass": "^3.0.2",
-    "jshint-stylish": "^2.2.1",
-    "load-grunt-tasks": "^4.0.0",
-    "node-sass": "^4.6.1"
+    "jshint-stylish": "^2.2.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
