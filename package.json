@@ -1,13 +1,13 @@
 {
     "name": "phpmysqlbtb",
-    "version": "1.0.9",
+    "version": "1.1.0",
     "description": "PHP Learning and Testing",
     "main": "index.php",
     "dependencies": {
-        "bootstrap": "^4.5.2"
+        "bootstrap": "^4.6.0"
     },
     "devDependencies": {
-        "@fortawesome/fontawesome-free": "^5.14.0"
+        "@fortawesome/fontawesome-free": "^5.15.3"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,7 @@
     "repository": "git@github.com:JamesVanWaza/phpmysqlbtb.git",
     "keywords": [
         "PHP7",
-        "Foundation6"
+        "Bootstrap5"
     ],
     "author": "JamesVanWaza <info@dosbranding.com>",
     "license": "MIT",

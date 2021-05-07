@@ -1,31 +1,24 @@
 {
-  "name": "openssl",
-  "version": "1.0.1",
-  "description": "Learning Open SSL Setup",
-  "main": "index.php",
-  "dependencies": {
-    "grunt": "^0.4.5",
-    "autoprefixer": "^6.1.2",
-    "grunt-contrib-compass": "^1.0.4",
-    "grunt-contrib-jshint": "^0.11.3",
-    "grunt-contrib-watch": "^0.6.1",
-    "jshint": "^2.9.1",
-    "grunt-force-task": "^1.0.0",
-    "grunt-postcss": "^0.7.1",
-    "grunt-sass": "^1.1.0",
-    "jshint-stylish": "^2.1.0",
-    "normalize-scss": "^3.0.3",
-    "node-sass": "^3.4.2"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "PHP7",
-    "OpenSSL",
-    "Foundation6"
-  ],
-  "author": "JamesVanWaza",
-  "license": "MIT"
+    "name": "openssl",
+    "version": "1.0.2",
+    "description": "Learning Open SSL Setup",
+    "main": "index.php",
+    "dependencies": {
+        "autoprefixer": "^10.2.5",
+        "jshint": "^2.12.0",
+        "jshint-stylish": "^2.2.1",
+        "normalize-scss": "^7.0.1",
+        "node-sass": "^5.0.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "PHP7",
+        "OpenSSL",
+        "Foundation6"
+    ],
+    "author": "JamesVanWaza",
+    "license": "MIT"
 }
