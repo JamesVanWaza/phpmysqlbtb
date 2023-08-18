@@ -1,7 +1,6 @@
 *.txt
 *.pkg
 node_modules/
-package-lock.json
 .DS_Store
 photogallery/includes/config.php
 scss/
